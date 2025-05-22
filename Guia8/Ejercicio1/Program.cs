@@ -1,4 +1,4 @@
-﻿namespace Ejercicio1_con_clase_servicio
+﻿namespace Ejercicio1
 {
     internal class Program
     {
