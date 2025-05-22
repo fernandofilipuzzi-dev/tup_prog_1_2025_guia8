@@ -27,7 +27,7 @@
         {
             double promedio = 0;
             if(Contador>0)
-                promedio = Acumulado / Contador;
+                promedio = 1.0*Acumulado / Contador;
             return promedio;
         }
 
