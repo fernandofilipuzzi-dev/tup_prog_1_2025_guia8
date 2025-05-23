@@ -3,31 +3,31 @@
     internal class Program
     {
         #region resolución del problema
-        static int Acumulado;
-        static int Contador;
-        static int Maximo;
-        static int Minimo;
+        static int acumulado;
+        static int contador;
+        static int maximo;
+        static int minimo;
 
         static void RegistrarValor(int valor)
         { 
-            Acumulado = valor;
-            Contador++;
+            acumulado = valor;
+            contador++;
 
-            if (Contador == 1 || valor > Maximo)
+            if (contador == 1 || valor > maximo)
             {
-                Maximo= valor;
+                maximo= valor;
             }
-            if (Contador == 1 || valor > Minimo)
+            if (contador == 1 || valor > minimo)
             {
-                Minimo = valor;
+                minimo = valor;
             }
         }
 
         static double CalcularPromedio()
         {
             double promedio = 0;
-            if(Contador>0)
-                promedio = 1.0*Acumulado / Contador;
+            if(contador>0)
+                promedio = 1.0*acumulado / contador;
             return promedio;
         }
 
@@ -52,8 +52,8 @@
         {
             Console.Clear();
             Console.WriteLine("Reiniciando las variables\n\n");
-            Acumulado = 0;
-            Contador = 0;
+            acumulado = 0;
+            contador = 0;
             Console.WriteLine("Presione una tecla para continuar");
             Console.ReadKey();
         }
@@ -80,8 +80,8 @@
             Console.Clear();
             Console.WriteLine("Máximo y Mínimo");
 
-            Console.WriteLine("Máximo: " + Maximo);
-            Console.WriteLine("Mímimo: " + Minimo+"\n\n\n");
+            Console.WriteLine("Máximo: " + maximo);
+            Console.WriteLine("Mímimo: " + minimo+"\n\n\n");
             Console.WriteLine("Presione una tecla para volver al menú principal");
             Console.ReadKey();
         }
@@ -91,7 +91,7 @@
 
             Console.WriteLine("Pantalla de promedio\n\n");
 
-            if (Contador > 0)
+            if (contador > 0)
             {
                 Console.WriteLine("Promedio: " +CalcularPromedio());
             }
@@ -109,9 +109,9 @@
 
             Console.WriteLine("Pantalla de cantidad de valores procesados\n\n");
 
-            if (Contador > 0)
+            if (contador > 0)
             {
-                Console.WriteLine("Cantidad: " + Contador);
+                Console.WriteLine("Cantidad: " + contador);
             }
             else
             {
