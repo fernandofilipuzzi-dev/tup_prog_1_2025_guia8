@@ -1,70 +1,69 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
+﻿
 namespace Ejercicio3
 {
     internal class Program
     {
         #region resolución del problema
-        static string Nombre0;
-        static int NumeroLibreta0;
-        static string Nombre1;
-        static int NumeroLibreta1;
-        static string Nombre2;
-        static int NumeroLibreta2;
-        static int Orden = 0;
+        static string nombre0;
+        static int numeroLibreta0;
+        static string nombre1;
+        static int numeroLibreta1;
+        static string nombre2;
+        static int numeroLibreta2;
+        static int orden = 0;
         
         static void RegistrarNombreYNumeroLibreta(string nombre, int numeroLibreta)
         {
-            if (Orden == 0)
+            if (orden == 0)
             {
-                Nombre0 = nombre;
-                NumeroLibreta0 = numeroLibreta;
+                nombre0 = nombre;
+                numeroLibreta0 = numeroLibreta;
             }
-            else if (Orden == 1)
+            else if (orden == 1)
             {
-                if (numeroLibreta < NumeroLibreta0)
+                if (numeroLibreta < numeroLibreta0)
                 {
-                    Nombre1 = Nombre0;
-                    NumeroLibreta1 = NumeroLibreta0;
-                    Nombre0 = nombre;
-                    NumeroLibreta0 = numeroLibreta;
+                    nombre1 = nombre0;
+                    numeroLibreta1 = numeroLibreta0;
+                    nombre0 = nombre;
+                    numeroLibreta0 = numeroLibreta;
                 }
                 else
                 {
-                    Nombre1 = nombre;
-                    NumeroLibreta1 = numeroLibreta;
+                    nombre1 = nombre;
+                    numeroLibreta1 = numeroLibreta;
                 }
             }
-            else if (Orden == 2)
+            else if (orden == 2)
             {
-                if (numeroLibreta < NumeroLibreta0)
+                if (numeroLibreta < numeroLibreta0)
                 {
-                    Nombre2 = Nombre1;
-                    NumeroLibreta2 = NumeroLibreta1;
-                    Nombre1 = Nombre0;
-                    NumeroLibreta1 = NumeroLibreta0;
-                    Nombre0 = nombre;
-                    NumeroLibreta0 = numeroLibreta;
+                    nombre2 = nombre1;
+                    numeroLibreta2 = numeroLibreta1;
+                    nombre1 = nombre0;
+                    numeroLibreta1 = numeroLibreta0;
+                    nombre0 = nombre;
+                    numeroLibreta0 = numeroLibreta;
                 }
-                if (numeroLibreta < NumeroLibreta1)
+                if (numeroLibreta < numeroLibreta1)
                 {
-                    Nombre2 = Nombre1;
-                    NumeroLibreta2 = NumeroLibreta1;
-                    Nombre1 = nombre;
-                    NumeroLibreta1= numeroLibreta;
+                    nombre2 = nombre1;
+                    numeroLibreta2 = numeroLibreta1;
+                    nombre1 = nombre;
+                    numeroLibreta1= numeroLibreta;
                 }
                 else
                 {
-                    Nombre2 = nombre;
-                    NumeroLibreta2 = numeroLibreta;
+                    nombre2 = nombre;
+                    numeroLibreta2 = numeroLibreta;
                 }
             }
-            Orden++;
+            orden++;
         }
 
         #endregion
 
-        #region metodos 
+        #region metodos de impresión de pantallas 
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();
@@ -99,9 +98,9 @@ namespace Ejercicio3
             Console.Clear();
             Console.WriteLine("Reparto de dinero: \n\n");
 
-            Console.WriteLine($"{Nombre0,20}|{NumeroLibreta0,10}");
-            Console.WriteLine($"{Nombre1,20}|{NumeroLibreta1,10}");
-            Console.WriteLine($"{Nombre2,20}|{NumeroLibreta2,10}");
+            Console.WriteLine($"{nombre0,20}|{numeroLibreta0,10}");
+            Console.WriteLine($"{nombre1,20}|{numeroLibreta1,10}");
+            Console.WriteLine($"{nombre2,20}|{numeroLibreta2,10}");
 
             Console.WriteLine("\n\n\nPresione una tecla para volver al menú principal");
             Console.ReadKey();

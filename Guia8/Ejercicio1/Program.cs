@@ -33,7 +33,7 @@
 
         #endregion
 
-        #region metodos 
+        #region metodos de impresión de pantallas
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();

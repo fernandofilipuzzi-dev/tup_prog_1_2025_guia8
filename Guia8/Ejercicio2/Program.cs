@@ -4,57 +4,57 @@ namespace Ejercicio2
     internal class Program
     {
         #region resolución del problema
-        static int Edad0;
-        static int Edad1;
-        static int Edad2;
-        static int Edad3;
-        static double Monto;
-        static double Porcentaje0;
-        static double Porcentaje1;
-        static double Porcentaje2;
-        static double Porcentaje3;
-        static double Monto0;
-        static double Monto1;
-        static double Monto2;
-        static double Monto3;
+        static int edad0;
+        static int edad1;
+        static int edad2;
+        static int edad3;
+        static double monto;
+        static double porcentaje0;
+        static double porcentaje1;
+        static double porcentaje2;
+        static double porcentaje3;
+        static double monto0;
+        static double monto1;
+        static double monto2;
+        static double monto3;
 
         static void RegistrarMontoARepartir(double monto)
         {
-            Monto = monto;
+            Program.monto = monto;
         }
 
         static void RegistrarEdad(int edad, int nroNiña)
         {
             switch (nroNiña)
             { 
-                case 0: Edad0 = edad; break;
-                case 1: Edad1 = edad; break;        
-                case 2: Edad2 = edad; break;
-                case 3: Edad3 = edad; break;
+                case 0: edad0 = edad; break;
+                case 1: edad1 = edad; break;        
+                case 2: edad2 = edad; break;
+                case 3: edad3 = edad; break;
             }
         }
 
         static void CalcularMontosYPorcentajesARepartir()
         {
-            double edadTotal=Edad0+Edad1+Edad2+Edad3;
-            Porcentaje0 = 1.0 * Edad0 / edadTotal * 100;
-            Porcentaje1 = 1.0 * Edad1 / edadTotal * 100;
-            Porcentaje2 = 1.0 * Edad2 / edadTotal * 100;
-            Porcentaje3 = 1.0 * Edad3 / edadTotal * 100;
-            Monto0 = Monto * Porcentaje0/100;
-            Monto1 = Monto * Porcentaje1/100;
-            Monto2 = Monto * Porcentaje2/100;
-            Monto3 = Monto * Porcentaje3/100;
+            double edadTotal=edad0+edad1+edad2+edad3;
+            porcentaje0 = 1.0 * edad0 / edadTotal * 100;
+            porcentaje1 = 1.0 * edad1 / edadTotal * 100;
+            porcentaje2 = 1.0 * edad2 / edadTotal * 100;
+            porcentaje3 = 1.0 * edad3 / edadTotal * 100;
+            monto0 = monto * porcentaje0/100;
+            monto1 = monto * porcentaje1/100;
+            monto2 = monto * porcentaje2/100;
+            monto3 = monto * porcentaje3/100;
         }
 
         #endregion
 
-        #region metodos 
+        #region metodos de impresión de pantallas
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();
             Console.WriteLine("Ingrese las siguiente opciones:\n\n");
-            Console.WriteLine("1- Iniciar Monto a repartir");
+            Console.WriteLine("1- Iniciar monto a repartir");
             Console.WriteLine("2- Solicitar Edad Por niña");
             Console.WriteLine("3- Mostrar monto y porcentajes de las niñas");            
             Console.WriteLine("(otro)- Salir.");
@@ -65,7 +65,7 @@ namespace Ejercicio2
         static void MostrarPantallaSolicitarMontoARepartir()
         {
             Console.Clear();
-            Console.WriteLine("Monto a repartir: \n\n");
+            Console.WriteLine("monto a repartir: \n\n");
 
             double montoARepartir=Convert.ToDouble(Console.ReadLine());
 
@@ -95,10 +95,10 @@ namespace Ejercicio2
 
             CalcularMontosYPorcentajesARepartir();
 
-            Console.WriteLine($"Niña 1 ({Edad0}), Porcentaje: {Porcentaje0:f2}, Monto: ${Monto0:f2}");
-            Console.WriteLine($"Niña 2 ({Edad1}), Porcentaje: {Porcentaje1:f2}, Monto: ${Monto1:f2}");
-            Console.WriteLine($"Niña 3 ({Edad2}), Porcentaje: {Porcentaje2:f2}, Monto: ${Monto2:f2}");
-            Console.WriteLine($"Niña 4 ({Edad3}), Porcentaje: {Porcentaje3:f2}, Monto: ${Monto3:f2}");
+            Console.WriteLine($"Niña 1 ({edad0}), Porcentaje: {porcentaje0:f2}, monto: ${monto0:f2}");
+            Console.WriteLine($"Niña 2 ({edad1}), Porcentaje: {porcentaje1:f2}, monto: ${monto1:f2}");
+            Console.WriteLine($"Niña 3 ({edad2}), Porcentaje: {porcentaje2:f2}, monto: ${monto2:f2}");
+            Console.WriteLine($"Niña 4 ({edad3}), Porcentaje: {porcentaje3:f2}, monto: ${monto3:f2}");
 
             Console.WriteLine("\n\n\nPresione una tecla para volver al menú principal");
             Console.ReadKey();

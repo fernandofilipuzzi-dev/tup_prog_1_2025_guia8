@@ -93,7 +93,7 @@ namespace Ejercicio5
         }
         #endregion
 
-        #region metodos 
+        #region metodos de impresion de pantallas
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();

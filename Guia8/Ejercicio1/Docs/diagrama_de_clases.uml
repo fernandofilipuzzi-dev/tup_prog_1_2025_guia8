@@ -60,7 +60,7 @@
 <XPD:ATTR name="Left" type="integer">88</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">160</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">280</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">251</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">225</XPD:ATTR>
 <XPD:REF name="Model">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="wZUlw5jaoUyjFpun2udRigAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="dT7QjLs2k0uBtLic1S4EpwAA">
@@ -118,8 +118,6 @@
 <XPD:REF name="BehavioralFeature">xAj2czkd30S6f9AVruAYNQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:ATTR name="#TypedFeatures" type="integer">1</XPD:ATTR>
-<XPD:REF name="TypedFeatures[0]">Im/7IG27LU2GVI8ixLGikwAA</XPD:REF>
 <XPD:ATTR name="#Attributes" type="integer">4</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="tb70BCrnmUKhrGcLBcG46QAA">
 <XPD:ATTR name="Name" type="string">acumulador</XPD:ATTR>
@@ -151,7 +149,7 @@
 <XPD:REF name="Views[1]">wfYoyGQb8kW2vbC2UUXE0gAA</XPD:REF>
 <XPD:REF name="Views[2]">wtO8gaJDl0aWlBzI4SpeJAAA</XPD:REF>
 <XPD:REF name="Views[3]">9YEW/3OG3EufMnB3BAt87QAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">11</XPD:ATTR>
+<XPD:ATTR name="#Operations" type="integer">10</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="55vgH4I1gUy2baMXU38rTQAA">
 <XPD:ATTR name="Name" type="string">RegistrarValor</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
@@ -206,30 +204,24 @@
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[6]" type="UMLOperation" guid="rqt22LPo10K/WiP8zScumAAA">
-<XPD:ATTR name="Name" type="string">MostrarPantallaMaximo</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">MostrarPantallaMaximoYMinimo</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[7]" type="UMLOperation" guid="xfP/quJiAE2c0JO7px67HAAA">
-<XPD:ATTR name="Name" type="string">MostrarPantallaMinimo</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
-<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
-<XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Operations[8]" type="UMLOperation" guid="90GrI8ntyEOs9IFp1aoEpgAA">
+<XPD:OBJ name="Operations[7]" type="UMLOperation" guid="90GrI8ntyEOs9IFp1aoEpgAA">
 <XPD:ATTR name="Name" type="string">MostrarPantallaCalcularYMostrarPromedio</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[9]" type="UMLOperation" guid="csRFnfALKESLOULp7LH1WwAA">
+<XPD:OBJ name="Operations[8]" type="UMLOperation" guid="csRFnfALKESLOULp7LH1WwAA">
 <XPD:ATTR name="Name" type="string">MostrarPantallaCantidad</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[10]" type="UMLOperation" guid="GnVjVUDeAkC9heaNxPp6DQAA">
+<XPD:OBJ name="Operations[9]" type="UMLOperation" guid="GnVjVUDeAkC9heaNxPp6DQAA">
 <XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
@@ -240,37 +232,29 @@
 <XPD:REF name="BehavioralFeature">GnVjVUDeAkC9heaNxPp6DQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:ATTR name="#Attributes" type="integer">5</XPD:ATTR>
-<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="Im/7IG27LU2GVI8ixLGikwAA">
-<XPD:ATTR name="Name" type="string">Servicio</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
-<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Servicio</XPD:ATTR>
-<XPD:REF name="Type_">LGCPRnKGfkaVD8ArQ8PZtgAA</XPD:REF>
-<XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="OdqgTO5GvkS2F9giGP2gRgAA">
+<XPD:ATTR name="#Attributes" type="integer">4</XPD:ATTR>
+<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="OdqgTO5GvkS2F9giGP2gRgAA">
 <XPD:ATTR name="Name" type="string">Acumulador</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Attributes[2]" type="UMLAttribute" guid="OZslMEYF70e0uYshHa7ICgAA">
+<XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="OZslMEYF70e0uYshHa7ICgAA">
 <XPD:ATTR name="Name" type="string">Contador</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Attributes[3]" type="UMLAttribute" guid="pVFOOElLJUKdb5X6ItaiRQAA">
+<XPD:OBJ name="Attributes[2]" type="UMLAttribute" guid="pVFOOElLJUKdb5X6ItaiRQAA">
 <XPD:ATTR name="Name" type="string">Maximo</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Attributes[4]" type="UMLAttribute" guid="OBgEmUVnMECyTsyGousl1wAA">
+<XPD:OBJ name="Attributes[3]" type="UMLAttribute" guid="OBgEmUVnMECyTsyGousl1wAA">
 <XPD:ATTR name="Name" type="string">Minimo</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>

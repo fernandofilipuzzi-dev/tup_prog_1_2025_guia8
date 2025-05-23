@@ -4,34 +4,34 @@ namespace Ejercicio4
     internal class Program
     {
         #region resolución del problema
-        static string Jugador1;
-        static int SetGanados1;
-        static string Jugador2;
-        static int SetGanados2;
+        static string jugador1;
+        static int setGanados1;
+        static string jugador2;
+        static int setGanados2;
         
         static void RegistrarJugadores(string nombre1, string nombre2)
         {
-            Jugador1 = nombre1;
-            Jugador2 = nombre2;
-            SetGanados1 = 0;
-            SetGanados2 = 0;
+            jugador1 = nombre1;
+            jugador2 = nombre2;
+            setGanados1 = 0;
+            setGanados2 = 0;
         }
         static void RegistrarResultadoSet(int resultado1, int resultado2)
         {
-            SetGanados1 += resultado1;
-            SetGanados2 += resultado2;
+            setGanados1 += resultado1;
+            setGanados2 += resultado2;
         }
         static string DeterminarGanador()
         {
-            if (SetGanados1 > SetGanados2)
-                return Jugador1;
-            else if (SetGanados1 < SetGanados2)
-                return Jugador2;
+            if (setGanados1 > setGanados2)
+                return jugador1;
+            else if (setGanados1 < setGanados2)
+                return jugador2;
             return "No hay ganador";
         }
         #endregion
 
-        #region metodos 
+        #region metodos de impresión de pantallas
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();
