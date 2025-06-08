@@ -60,7 +60,7 @@
 <XPD:ATTR name="Left" type="integer">68</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">160</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">309</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">121</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">137</XPD:ATTR>
 <XPD:REF name="Model">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="wZUlw5jaoUyjFpun2udRigAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="dT7QjLs2k0uBtLic1S4EpwAA">
@@ -96,7 +96,7 @@
 <XPD:REF name="Views[1]">wfYoyGQb8kW2vbC2UUXE0gAA</XPD:REF>
 <XPD:REF name="Views[2]">wtO8gaJDl0aWlBzI4SpeJAAA</XPD:REF>
 <XPD:REF name="Views[3]">9YEW/3OG3EufMnB3BAt87QAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">6</XPD:ATTR>
+<XPD:ATTR name="#Operations" type="integer">7</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="55vgH4I1gUy2baMXU38rTQAA">
 <XPD:ATTR name="Name" type="string">DeterminarLosDíasDelMes</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
@@ -136,25 +136,31 @@
 <XPD:REF name="BehavioralFeature">Ao4bvyHMlkqeOQRq2iFO6AAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[2]" type="UMLOperation" guid="lwsTC0gdYEOyLmISFbVbXwAA">
+<XPD:OBJ name="Operations[2]" type="UMLOperation" guid="s+he8Xmpl02Yhb+SIblOJAAA">
+<XPD:ATTR name="Name" type="string">CalcularMontosYPorcentajesARepartir</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[3]" type="UMLOperation" guid="lwsTC0gdYEOyLmISFbVbXwAA">
 <XPD:ATTR name="Name" type="string">MostrarPantallaSolicitarOpcionMenu</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[3]" type="UMLOperation" guid="EkgbbXfpi0GSgRc7Evdh4AAA">
+<XPD:OBJ name="Operations[4]" type="UMLOperation" guid="EkgbbXfpi0GSgRc7Evdh4AAA">
 <XPD:ATTR name="Name" type="string">MostrarPantallaSolicitarMesAñoYDeterminarDias</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[4]" type="UMLOperation" guid="yIn6JFvnck+dwiGQLnm3UAAA">
+<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="yIn6JFvnck+dwiGQLnm3UAAA">
 <XPD:ATTR name="Name" type="string">MostrarPantallaVerificarSiElAñoEsBisiesto</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">e5QTdowfh0S1OdH2dlYQ7wAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="GnVjVUDeAkC9heaNxPp6DQAA">
+<XPD:OBJ name="Operations[6]" type="UMLOperation" guid="GnVjVUDeAkC9heaNxPp6DQAA">
 <XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">static</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
