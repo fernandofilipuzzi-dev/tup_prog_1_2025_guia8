@@ -98,12 +98,14 @@ namespace Ejercicio7
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();
-            Console.WriteLine("Ingrese las siguiente opciones:\n\n");
-            Console.WriteLine("1- Ingresar un resumen de venta");
-            Console.WriteLine("2- Mostrar Número de transacción registrado con el mayor monto total");
-            Console.WriteLine("3- Mostrar Porcentaje de recaudación por rubro");
-            Console.WriteLine("4- Mostrar recaudación por rubro y recaudación total");
-            Console.WriteLine("(otro)- Salir.");
+            Console.WriteLine(@"Ingrese las siguiente opciones:
+
+1- Ingresar un resumen de venta
+2- Mostrar Número de transacción registrado con el mayor monto total.
+3- Mostrar porcentaje de cantidad por rubro.
+4- Mostrar la recaudación total.
+(otro)- Salir.
+");
 
             int op = Convert.ToInt32( Console.ReadLine() );
             return op;
@@ -135,40 +137,48 @@ namespace Ejercicio7
         static void MostrarPantallaTransaccionMayorMonto()
         {
             Console.Clear();
-            Console.WriteLine("Transacción con mayor monto en ventas\n\n");
+            Console.WriteLine($@"Transacción con mayor monto en ventas
 
-            Console.WriteLine($"Número de transacción: {numeroTransaccionMayor}\n");
-            Console.WriteLine($"Monto Total: ${montoTransaccionMayor:f2}\n\n\n");
 
-            Console.WriteLine("\n\n\nPresione una tecla para continuar");
+Número de transacción: {numeroTransaccionMayor}
+Monto Total: ${montoTransaccionMayor:f2}
+
+
+Presione una tecla para continuar");
             Console.ReadKey();
         }
 
         static void MostrarPantallaPorcentajeDeCantidadesPorRubro()
         {
             Console.Clear();
-            Console.WriteLine("\n\t\tPorcentaje de ventas por rubo \n\n");
-
             CalcularPorcentajesCantidadVentasPorRubro();
 
-            Console.WriteLine($"Rubro 1: {porcentajeCantidadRubro1:f2}%\n");
-            Console.WriteLine($"Rubro 2: {porcentajeCantidadRubro2:f2}%\n");
-            Console.WriteLine($"Rubro 3: {porcentajeCantidadRubro3:f2}%\n");
-            Console.WriteLine($"Rubro 4: {porcentajeCantidadRubro4:f2}%\n");
-            Console.WriteLine($"Rubro 5: {porcentajeCantidadRubro5:f2}%\n\n\n\n");
+            Console.WriteLine($@"
+Porcentaje de ventas por rubo 
+                       
 
-            Console.WriteLine("\n\n\nPresione una tecla para continuar");
+Rubro 1: {porcentajeCantidadRubro1:f2}%
+Rubro 2: {porcentajeCantidadRubro2:f2}%
+Rubro 3: {porcentajeCantidadRubro3:f2}%
+Rubro 4: {porcentajeCantidadRubro4:f2}%
+Rubro 5: {porcentajeCantidadRubro5:f2}%
+
+
+
+Presione una tecla para continuar");
             Console.ReadKey();
         }
         
         static void MostrarPantallaMontoRecaudadoTotal()
         {
             Console.Clear();
-            Console.WriteLine("Monto total recaudado. \n\n");
+            Console.WriteLine($@"Monto total recaudado.
 
-            Console.WriteLine($"Monto: ${recaudacionTotal:f2}\n\n\n");
 
-            Console.WriteLine("\n\n\nPresione una tecla para continuar");
+Monto: ${recaudacionTotal:f2}
+
+
+Presione una tecla para continuar");
             Console.ReadKey();
         }
 
